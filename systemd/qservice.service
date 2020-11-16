@@ -1,0 +1,11 @@
+[Unit]
+Description=Q Search Engine service
+
+[Service]
+ExecStart=/bin/env "${HOME}/.deno/bin/deno" run --allow-read --allow-net --allow-env --allow-run https://raw.githubusercontent.com/minioin/q/release/bin/service.ts
+Restart=on-failure
+SuccessExitStatus=3 4
+RestartForceExitStatus=3 4
+
+[Install]
+WantedBy=default.target

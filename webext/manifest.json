@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Q Search engine",
+  "description": "Adds a search engine that searches Q Search",
+  "version": "1.0",
+  "homepage": "http://localhost:3738/search/homepage",
+  "chrome_settings_overrides": {
+    "search_provider": {
+      "name": "Q Search",
+      "search_url": "http://localhost:3738/search/?q={searchTerms}",
+      "keyword": "q",
+      "favicon_url": "http://localhost:3738/search/favicon.ico",
+      "is_default": false,
+      "encoding": "UTF-8"
+    }
+  }
+}
