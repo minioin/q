@@ -1,4 +1,4 @@
-import { Application } from "https://deno.land/x/abc@v1.2.1/mod.ts";
+import { Application } from "https://deno.land/x/abc@v1.3.1/mod.ts";
 import { loadUserConfig } from "../src/config.ts";
 import { getSearchUrl } from "../src/mod.ts";
 
