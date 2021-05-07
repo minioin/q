@@ -8,7 +8,7 @@ async function main() {
   const config: Config = await loadUserConfig();
   const { url, queryString } = await getSearchUrl(config, args);
 
-  return opn(url.replace("%s", queryString));
+  return opn(encodeURI(url.replace("%s", queryString)));
 }
 
 main();
